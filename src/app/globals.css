@@ -75,6 +75,30 @@
   box-shadow: 0 1px 3px rgba(26, 26, 26, 0.06);
 }
 
+.hero-dvklab-rise {
+  opacity: 0;
+  transform: translateY(16px);
+  filter: blur(8px);
+  animation: hero-dvklab-rise 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+@keyframes hero-dvklab-rise {
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-dvklab-rise {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
 .input-focus-glow:focus-visible {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 12%, transparent);
 }

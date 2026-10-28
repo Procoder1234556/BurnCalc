@@ -1,4 +1,5 @@
 export const NAV_LINKS = [
+  { label: "Story", href: "#story" },
   { label: "Tools", href: "/tools" },
   { label: "Thoughts", href: "#thoughts" },
   { label: "FAQ", href: "#faq" },
@@ -195,6 +196,13 @@ export const BLOG_POSTS = [
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=85",
     href: "#resources",
   },
+  {
+    category: "Voice memo",
+    title: "Read your metrics out loud before you share screen",
+    image:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=85",
+    href: "#story",
+  },
 ] as const;
 
 export const PRICING_PLANS = [
@@ -293,5 +301,17 @@ export const FAQ_ITEMS = [
   {
     q: "Who is BurnCalc for?",
     a: "Founders preparing pitches, operators sending updates, and investors screening deals who want consistent definitions without rebuilding spreadsheets.",
+  },
+  {
+    q: "Why do the explanations matter?",
+    a: "Each output includes a one-line definition and formula context so you can say the number and the method in the same breath — useful on live calls and in written memos.",
+  },
+  {
+    q: "Can I use BurnCalc if I am not in the US?",
+    a: "Yes. The math is the same; label your currency and reporting period on every slide and update you send.",
+  },
+  {
+    q: "What is the Wispr Flow memo on the home page?",
+    a: "It is long-form marketing copy written in a spoken-word rhythm — the kind of draft you would dictate before a partner meeting. It describes how BurnCalc fits pitch prep, not a separate product.",
   },
 ] as const;

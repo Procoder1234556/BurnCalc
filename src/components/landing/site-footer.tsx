@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LegalFooterLinks } from "@/components/legal/legal-footer-links";
 
 export function SiteFooter() {
   return (
@@ -8,21 +8,14 @@ export function SiteFooter() {
           For illustrative purposes only. Not investment, tax, or legal advice.
           Verify formulas against your model before sharing externally.
         </p>
-        <nav aria-label="Legal" className="flex flex-wrap gap-6 text-xs">
-          <Link
-            href="/privacy"
-            className="text-muted transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-          >
-            Privacy
-          </Link>
-          <Link
-            href="/terms"
-            className="text-muted transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-          >
-            Terms
-          </Link>
-          <span className="text-muted/80">© {new Date().getFullYear()} BurnCalc</span>
-        </nav>
+        <div className="flex flex-col gap-3 sm:items-end">
+          <LegalFooterLinks
+            className="flex flex-wrap gap-x-6 gap-y-2 text-xs"
+            separator="none"
+            linkClassName="text-muted transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          />
+          <span className="text-xs text-muted/80">© {new Date().getFullYear()} BurnCalc</span>
+        </div>
       </div>
     </footer>
   );

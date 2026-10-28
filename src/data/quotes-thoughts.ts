@@ -47,4 +47,16 @@ export const THOUGHTS = [
     title: "Clarity beats complexity",
     body: "A single defensible snapshot beats a fifty-tab model when you are screening or pitching in under three minutes.",
   },
+  {
+    title: "Read it out loud",
+    body: "If a metric sounds wrong when you say it, fix the inputs before you fix the slide design. BurnCalc is built for that quick spoken pass.",
+  },
+  {
+    title: "Same screen, same definitions",
+    body: "Burn, unit economics, and round math on one workspace means you are not reconciling three spreadsheets an hour before the call.",
+  },
+  {
+    title: "Exports are intentional",
+    body: "Nothing leaves your browser until you copy or export. Treat the summary block like a voice memo transcript — review, then send.",
+  },
 ] as const;

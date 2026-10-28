@@ -18,6 +18,22 @@
 # production
 /build
 
+# vibe-wise learner notes (local)
+.vibe-wise/
+
+# local editor / design tooling
+.cursor/
+.21st/
+
+# downloaded archives and scratch extractions
+*.zip
+*.tar.gz
+/_find-skills-extract/
+
+# legal template vendor clones (site/*.md is source of truth)
+/legal-templates/_vendor/
+/legal-templates/upstream/
+
 # misc
 .DS_Store
 *.pem

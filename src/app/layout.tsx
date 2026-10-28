@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GeistMono } from "geist/font/mono";
 import { Inter, Geist } from "next/font/google";
 import "./globals.css";
+import "@/types/piixpal";
 import { cn } from "@/lib/utils";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/seo/site";
 

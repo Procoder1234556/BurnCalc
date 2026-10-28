@@ -13,7 +13,7 @@ export function ProblemSection() {
           <SectionHeading
             align="center"
             title="Spreadsheets shouldn't be your second job."
-            description="Messy models, inconsistent metric definitions, and hours lost before investor meetings — when you only needed a clear burn, runway, and unit economics snapshot."
+            description="You did not start a company to debug VLOOKUP at midnight. When burn, runway, and unit economics need to match what you say on the call, you need one pass — not another template."
           />
         </div>
         <ul className="mt-14 grid gap-8 sm:grid-cols-3">

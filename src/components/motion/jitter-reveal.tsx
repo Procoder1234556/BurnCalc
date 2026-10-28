@@ -13,7 +13,7 @@ export function JitterReveal({
   children: React.ReactNode;
   className?: string;
   delayMs?: number;
-  as?: "div" | "li" | "section";
+  as?: "div" | "li" | "section" | "article";
 }) {
   const ref = useRef<HTMLElement>(null);
   const [visible, setVisible] = useState(false);

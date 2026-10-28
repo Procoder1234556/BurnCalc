@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Flame } from "lucide-react";
+import { LegalFooterLinks, LEGAL_FOOTER_LINKS } from "@/components/legal/legal-footer-links";
 import { MarketingContainer } from "@/components/marketing/container";
 import { Separator } from "@/components/ui/separator";
 import { APP_URL } from "@/lib/marketing/links";
@@ -12,6 +13,8 @@ const LINKS = {
     { label: "Workspace", href: APP_URL },
   ],
   Company: [
+    { label: "Story", href: "/#story" },
+    { label: "Voice memos", href: "/#memos" },
     { label: "Thoughts", href: "/#thoughts" },
     { label: "Contact", href: "mailto:hello@burncalc.app" },
   ],
@@ -21,15 +24,12 @@ const LINKS = {
     { label: "llms.txt", href: "/llms.txt" },
     { label: "FAQ", href: "/#faq" },
   ],
-  Legal: [
-    { label: "Privacy", href: "/privacy" },
-    { label: "Terms", href: "/terms" },
-  ],
+  Legal: [...LEGAL_FOOTER_LINKS],
 };
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-background pb-12 pt-14">
+    <footer id="site-footer" className="relative border-t border-border bg-background pb-12 pt-14">
       <MarketingContainer>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
@@ -63,10 +63,12 @@ export function Footer() {
           ))}
         </div>
         <Separator className="my-8" />
-        <div className="flex flex-col gap-2 text-xs text-muted sm:flex-row sm:justify-between">
+        <div className="flex flex-col gap-3 text-xs text-muted sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} BurnCalc. All rights reserved.</p>
-          <p>For illustration only. Not financial advice.</p>
+          <LegalFooterLinks className="flex flex-wrap gap-x-1 gap-y-1" separator="pipe" />
+          <p className="sm:text-right">For illustration only. Not financial advice.</p>
         </div>
+        <piix-pal pal="boing" on="#site-footer" aria-hidden />
       </MarketingContainer>
     </footer>
   );

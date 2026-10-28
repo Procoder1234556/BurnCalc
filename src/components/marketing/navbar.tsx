@@ -11,6 +11,7 @@ import { NAV_LINKS } from "@/data/marketing";
 export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur-md pt-4 pb-4 sm:pt-5 sm:pb-5">
+      <piix-pal pal="thread" on="header" aria-hidden />
       <MarketingContainer>
         <nav
           className="flex items-center justify-between gap-4"

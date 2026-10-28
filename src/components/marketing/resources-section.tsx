@@ -9,7 +9,7 @@ export function ResourcesSection() {
     <section id="resources" className="bg-background py-20 sm:py-24 lg:py-28">
       <MarketingContainer>
         <SectionHeading align="center" title="Resources for sharper metrics" />
-        <ul className="mt-12 grid gap-6 sm:grid-cols-3">
+        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {BLOG_POSTS.map((post) => (
             <li key={post.title}>
               <article className="group overflow-hidden rounded-xl border border-border bg-white">

@@ -42,6 +42,13 @@ export const STATIC_PAGE_SEO: StaticPageSeo[] = [
       "Terms for using BurnCalc startup finance calculators. Illustrative outputs only — not financial advice.",
     keywords: ["burncalc terms"],
   },
+  {
+    path: "/cookies",
+    title: "Cookie policy",
+    description:
+      "How BurnCalc uses cookies and similar technologies on burncalc.app, including optional analytics.",
+    keywords: ["burncalc cookies", "cookie policy"],
+  },
 ];
 
 export function listAllPublicPaths(): string[] {

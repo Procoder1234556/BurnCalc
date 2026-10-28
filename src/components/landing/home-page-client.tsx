@@ -4,6 +4,7 @@ import { useCallback, useMemo, useState } from "react";
 import { CalculatorHeader } from "@/components/calculator/header";
 import { InputPanel } from "@/components/calculator/input-panel";
 import { ResultsPanel } from "@/components/calculator/results-panel";
+import { LegalFooterLinks } from "@/components/legal/legal-footer-links";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { computeAllMetrics } from "@/lib/metrics";
 import { parseInputs, type RawInputs } from "@/lib/metrics/parse";
@@ -131,8 +132,9 @@ export function HomePageClient() {
       </main>
 
       <footer className="border-t border-border">
-        <div className="mx-auto flex w-[90%] max-w-[1200px] flex-col gap-3 px-0 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex w-[90%] max-w-[1200px] flex-col gap-4 px-0 py-6 text-xs text-muted sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
           <p>For illustrative purposes only. Not financial advice.</p>
+          <LegalFooterLinks separator="pipe" />
           <button
             type="button"
             onClick={onCopy}
